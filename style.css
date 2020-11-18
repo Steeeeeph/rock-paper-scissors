@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+button {
+
+    height: 100px;
+    width: 100px;
+}
+i {
+    font-size: 50px;
+
+}
+#rock, #paper {
+    transform: rotate(-90deg);
+}
+input {
+   float: right;
+}
