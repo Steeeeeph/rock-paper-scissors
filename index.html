@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <title>Rock, paper, scissors!</title>
     <link rel="stylesheet" href="style.css">
+        <!-- Icons -->
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
 </head>
 <body>
-    <h1>Rock, paper, scissors!</h1>
-    <form class="container">
+    
+    <div class="header">
+        <h1>Rock, paper, scissors!</h1>
+    </div>
+    <div class="btns">
         <button type="button" class="btn" id="rock" value="true" onclick="rockButton()"><i class="far fa-hand-rock"></i></button>
         <button type="button" class="btn" id="paper" value="true" onclick="paperButton()"><i class="far fa-hand-paper"></i></button>
         <button type="button" class="btn" id="scissors" value="true" onclick="scissorsButton()"><i class="far fa-hand-scissors"></i></button>
-        <input type="submit" id="run" value="Play!">
-    </form>
+    </div>
+    <input type="submit" id="run" value="Play!">
+
     <p id="outcome"></p>
-
-<!-- <script>
-    function rockButton() {
-        console.log('rock');
-        return 'rock';
-    }
-    function paperButton() {
-        console.log('paper');
-        return 'paper';
-    }
-    function scissorsButton() {
-        console.log('scissors');
-        return 'scissors';
-    }
-
-</script> -->
+    <div class="outcome">
+        
+    </div>
 <script src="script.js"></script>
     </body>
 </html>
