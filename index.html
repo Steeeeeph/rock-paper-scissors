@@ -11,24 +11,32 @@
         <!-- Icons -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="script.js" defer></script>
 
 </head>
 <body>
-    
-    <div class="header">
-        <h1>Rock, paper, scissors!</h1>
-    </div>
-    <div class="btns">
-        <button type="button" class="btn" id="rock" value="true" onclick="rockButton()"><i class="far fa-hand-rock"></i></button>
-        <button type="button" class="btn" id="paper" value="true" onclick="paperButton()"><i class="far fa-hand-paper"></i></button>
-        <button type="button" class="btn" id="scissors" value="true" onclick="scissorsButton()"><i class="far fa-hand-scissors"></i></button>
-    </div>
-    <input type="submit" id="run" value="Play!">
-
-    <p id="outcome"></p>
-    <div class="outcome">
-        
-    </div>
-<script src="script.js"></script>
-    </body>
+    <div class="game-body">
+        <div class="header">
+            <h1>Rock,<br> paper,<br> scissors!</h1>
+        </div>
+        <div class="btns">
+            <button type="button" class="btn" id="rock" value="true" onclick="rockButton()"><i class="far fa-hand-rock"></i></button>
+            <button type="button" class="btn" id="paper" value="true" onclick="paperButton()"><i class="far fa-hand-paper"></i></button>
+            <button type="button" class="btn" id="scissors" value="true" onclick="scissorsButton()"><i class="far fa-hand-scissors"></i></button>
+        </div>
+        <div id="submit">
+            <button type="button" id="run">Play!</button>
+            <button type="button" id="reset">Reset</button>
+        </div>
+        <div class="score">
+                <p class="table-you">You</p>
+                <p class="table-computer">Computer</p>
+            <p class="your-score">0</p> 
+            <p class="computer-score">0</p>
+        </div>
+        <div id="result">
+            <p id="outcome"></p>   
+        </div>
+    </div> 
+</body>
 </html>

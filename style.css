@@ -1,17 +1,26 @@
+body {
+    background-color: rgb(58, 57, 57);
+}
+.game-body {
+    display: block;
+    margin: auto auto;
+    width: 60vw;
+    background-color: rgb(250, 198, 101);
+}
 h1 {
     font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
     text-align: center;
+    padding: 70px 0 70px 0;
 }
-.header{
-    height: 200px;
-}
+
 .btns {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
 }
-.btn {
+button {
     height: auto;
     width: auto;
     background: none;
@@ -19,19 +28,78 @@ h1 {
     margin: 50px;
     /* outline: none; */
 }
-.btn:hover {
+.btn:hover, #run:hover, #reset:hover{
     transform: scale(1.2);
     transition: 100ms;
+    text-decoration: underline;
 }
-/* button:focus {
-    background: grey;
-} */
+.btn:focus, #run:focus, #reset:focus {
+    transform: scale(1.5);
+}
 i {
     font-size: 100px;
     color: black;
+    /* fill: orange; 
+    doesntwork */
 
 }
+#submit {
+    display: flex;
+    flex-direction: row;
+}
+#run {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+    float: right;
+}
+#reset {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+    float: left;
+    display: none;
+}
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+/* .table-you {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: center;
 
-input {
-   float: right;
+}
+.your-score {
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+
+}
+.table-computer {
+    grid-column: 2;
+    grid-row: 1;
+}
+.computer-score {
+    grid-column: 2;
+    grid-row: 2;
+} */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+#result {
+    width: 100%;
+    height: 200px;
+}
+#outcome {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-align: center;
+    line-height: 200px;
 }
