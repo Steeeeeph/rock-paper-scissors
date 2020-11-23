@@ -65,7 +65,7 @@ document.getElementById("run").addEventListener('click', function takeAchance (e
     let result = function afterRound() {
     }
     if(result) {
-        document.getElementById("run").innerHTML = 'Wanna play some more?';
+        document.getElementById("run").innerHTML = 'Play again?';
         document.getElementById("reset").style.display = 'flex';
     }
     else if (!result) {

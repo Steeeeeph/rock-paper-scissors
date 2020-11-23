@@ -33,7 +33,7 @@ button {
     transition: 100ms;
     text-decoration: underline;
 }
-.btn:focus, #run:focus, #reset:focus {
+.btn:focus {
     transform: scale(1.5);
 }
 i {
@@ -52,21 +52,25 @@ i {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: black;
-    float: right;
+    display: flex;
+    margin: 0 10px 0 0;
+    justify-content: right;
 }
 #reset {
     width: 50%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: black;
-    float: left;
     display: none;
+    margin: 0 0 0 10px;
 }
 .score {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     justify-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 /* .table-you {
     grid-column: 1;
